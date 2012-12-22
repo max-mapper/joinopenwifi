@@ -1,6 +1,10 @@
 # joinopenwifi
 
-automatically join open and internet connect wireless networks on linux
+automatically join open and internet connected wireless networks on linux
+
+## how it works
+
+it uses `iwconfig` and `iwlist` to scan for nearby networks. then one at a time (in order of signal strength) it tries to connect to one and then checks to see if it can resolve the dns for `google.com`. if it can't then it moves on to the next network until it find one that is open and online.
 
 ## installation
 
