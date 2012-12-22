@@ -1,0 +1,31 @@
+{
+  "name": "joinopenwifi",
+  "version": "0.0.1",
+  "description": "automatically join open and internet connect wireless networks on linux",
+  "main": "index.js",
+  "bin": {
+    "joinopenwifi": "bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/maxogden/joinopenwifi.git"
+  },
+  "keywords": [
+    "wifi",
+    "iwconfig",
+    "iwlist",
+    "wlan",
+    "raspberrypi"
+  ],
+  "dependencies": {
+    "iwlist": "0.0.5"
+  },
+  "author": {
+    "name": "Max Ogden",
+    "email": "max@maxogden.com"
+  },
+  "license": "BSD",
+  "engine": {
+    "node": ">=0.6.0"
+  }
+}
