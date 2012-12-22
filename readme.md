@@ -24,7 +24,7 @@ sure multiple instances dont spawn (like a process lock file)
 
 `sudo joinopenwifi <interface> <delay (milliseconds)> <verbose>`
 
-optional arguments default to: `wlan0 30000 true`
+optional arguments default to: `wlan0 0 true`
 
 there is also a programmatic API. you can just require('joinopenwifi') and read index.js
 

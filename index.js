@@ -4,10 +4,10 @@ function JoinOpenWifi(iface, delay, silent) {
   this.iface = (iface || 'wlan0')
   this.tried = {}
   this.silent = silent
-  this.delay = delay || 30000
+  this.delay = delay || 0
   this.iw = iwlist(this.iface, this.delay, this.silent)
   // wait for some time so that linux can try to associate with a known network first
-  if (!this.silent) console.log('waiting ' + this.delay/1000 + ' seconds')
+  if (!this.silent && this.delay > 0) console.log('waiting ' + this.delay/1000 + ' seconds')
   setTimeout(this.start.bind(this), this.delay)
 }
 
