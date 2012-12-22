@@ -1,6 +1,6 @@
 {
   "name": "joinopenwifi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "automatically join open and internet connect wireless networks on linux",
   "main": "index.js",
   "bin": {
