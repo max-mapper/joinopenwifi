@@ -67,11 +67,9 @@ JoinOpenWifi.prototype.connectToNetwork = function(essid) {
 }
 
 JoinOpenWifi.prototype.removeSecureNetworks = function(networks) {
-  openNetworks = []
-  networks.map(function(network) {
-    if (!network.encrypted) openNetworks.push(network)
+  return networks.filter(function(network) {
+    return !network.encrypted;
   })
-  return openNetworks
 }
 
 JoinOpenWifi.prototype.getNextNetwork = function(networks) {
